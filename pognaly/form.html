@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+
+    <header class="main-header main-header-inner-pages">
+      <div class="main-header__bg-wrap main-header-inner-pages__bg-wrap"> 
+        <div class="main-header__ctn-wrap">
+          <div class="container">
+            <div class="main-header__topline-menu">
+              <a class="main-header__logo" href="index.html">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp 2x">
+                  <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
+                  <img class="main-header__logo-img-white" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Pognali logotype">
+                </picture>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp 2x">
+                  <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+                  <img class="main-header__logo-img-blue" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Pognali logotype">
+                </picture>
+              </a>
+              <button class="main-header__toggle-menu-btn">
+                <span class="visually-hidden"></span>
+              </button>
+            </div>
+            <nav class="main-header__menu">
+              <ul class="main-header__nav-links">
+                <li><a href="aboute-us.html">О сервисе</a></li>
+                <li><a href="form.html">Направления</a></li>
+                <li><a href="catalog.html">Попутчики</a></li>
+              </ul>
+              <div class="main-header__btns">
+                <button class="btn btn--add btn--light-gold main-header__auth-btn main-header__auth-btn--open-menu">Авторизация</button>
+                <div class="main-header__contacts">
+                  <button class="main-header__phone-btn">
+                      <a href="tel:88005558628">
+                        <span class="main-header__svg-wrap">
+                            <svg width="18px" height="18px" viewBox="0 0 36 36">
+                              <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+                              c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+                              c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+                              c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+                              M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+                              c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+                              c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+                              c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"></path>
+                            </svg>
+                        </span>
+                        <span class="main-header__btn-text">8 800 555-86-28</span>
+                      </a>
+                  </button>
+                  <button class="main-header__mail-btn">
+                      <a href="mailto:mail@htmlacademy.ru">
+                        <span class="main-header__svg-wrap">
+                            <svg width="18px" height="13px" viewBox="0 0 36 26">
+                              <path d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+                              c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+                              L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+                              c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"></path>
+                            </svg>
+                        </span>
+                        <span class="main-header__btn-text">mail@htmlacademy.ru</span>
+                      </a>
+                  </button>
+                </div>
+              </div>
+              <div class="main-header__social-btns">
+                <a class="main-header__social-link main-header__social-link--facebook" href="#">
+                  <svg width="11px" height="21px" viewBox="0 0 11 21">
+                    <g>
+                      <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
+                      V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
+                      C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"></path>
+                    </g>
+                  </svg>
+                </a>
+                <a class="main-header__social-link main-header__social-link--vkontakte" href="#">
+                  <svg width="23px" height="12px" viewBox="0 0 30 15.8">
+                    <g>
+                      <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
+                      c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
+                      c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
+                      c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
+                      C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
+                      c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
+                      c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
+                      c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
+                      c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
+                      c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
+                      c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
+                      c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
+                      c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
+                      c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
+                      C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
+                      C18.4,10.9,18.5,10.9,18.6,10.9z"></path>
+                    </g>
+                  </svg>
+                </a>
+                <a class="main-header__social-link main-header__social-link--instagram" href="#">
+                  <svg width="18px" height="18px" viewBox="0 0 23 23">
+                    <path d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
+                    M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"></path>
+                    <path d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
+                    c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"></path>
+                    <circle cx="17.6" cy="5.4" r="1.3"></circle>
+                  </svg>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="container">
+            <h1 class="white-text">Направления</h1>
+            <a href="index.html" class="main-header__nav-btn">На главную</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="s-main-user-info">
+        <h2 class="visually-hidden">Основная информация попутчика</h2>
+        <div class="container">
+          <form class="s-main-user-info__setting">
+            <div class="traveler-level s-main-user-info__traveler-level">
+              <svg width="60px" height="60px" viewBox="0 0 60 60">
+                <circle r="28px" cx="30" cy="30" stroke-dasharray="160% 60%">
+                </circle>
+              </svg>
+              <span class="traveler-level__num s-main-user-info__num">80</span>
+              <span class="traveler-level__text s-main-user-info__text">level</span>
+            </div>
+            <div class="s-main-user-info__foto">
+              <img width="100" height="100" src="img/demin-mobile@1x.jpg" alt="Таня Фирсова фото">
+            </div>
+            <button type="button"><span>Сменить</span> фото</button>
+            <fieldset class="s-main-user-info__hobby">
+              <legend class="visually-hidden">Тэги</legend>
+              <div class="s-main-user-info__hobby-wrap">
+                <h3 class="s-main-user-info__hobby-fake-legend">Тэги</h3>
+                <label for="user-hobby" class="visually-hidden">Увлечения попутчика</label>
+                <textarea id="user-hobby" name="user-hobby">#бургер #бар #футбол #концерт #крафт</textarea>
+              </div>
+            </fieldset>
+            <fieldset class="s-main-user-info__transport">
+              <legend class="visually-hidden">Транспорт</legend>
+              <div class="s-main-user-info__transport-wrap">
+                <h3 class="s-main-user-info__transport-fake-legend">Транспорт</h3>
+                <ul class="transport-list">
+                  <li class="transport-list__item">
+                    <input id="plane" class="visually-hidden" type="checkbox" name="plane">
+                    <label for="plane">
+                      <svg id="icon-plane" class="s-main-user-info__svg-plane" width="14px" height="16px" viewBox="0 0 19 21">
+                        <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                        c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                        C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                        c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                        c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                        c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                        c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"></path>
+                      </svg>
+                      <span class="visually-hidden">Самолёт</span>
+                    </label>
+                  </li>
+                  <li class="transport-list__item">
+                    <input id="bus" class="visually-hidden" type="checkbox" name="bus" checked="">
+                    <label for="bus">
+                      <svg id="icon-bus" class="s-main-user-info__svg-bus" width="13px" height="16px" viewBox="0 0 17 21">
+                        <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                        c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                        C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                        M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                        H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"></path>
+                      </svg>
+                      <span class="visually-hidden">Автобус</span>
+                    </label>
+                  </li>
+                  <li class="transport-list__item">
+                    <input id="bike" class="visually-hidden" type="checkbox" name="bike">
+                    <label for="bike">
+                      <svg id="icon-bike" class="s-main-user-info__svg-bike" width="19px" height="17px" viewBox="0 0 24 21">
+                        <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                        S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                        l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                        l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                        s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"></path>
+                      </svg>
+                      <span class="visually-hidden">Байк</span>
+                    </label>
+                  </li>
+                  <li class="transport-list__item">
+                    <input id="afoot" class="visually-hidden" type="checkbox" name="afoot" checked="">
+                    <label for="afoot">
+                      <svg id="icon-afoot" class="s-main-user-info__svg-afoot" width="15px" height="17px" viewBox="0 0 20 21">
+                        <g><ellipse cx="14.3" cy="2" rx="2.1" ry="2"></ellipse>
+                          <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                          C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                          c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                          c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                          z"></path>
+                        </g>
+                      </svg>
+                      <span class="visually-hidden">Пешком</span> 
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      <section class="s-my-plans">
+        <div class="s-my-plans__inner">
+          <h2 class="visually-hidden">Планы попутчика</h2>
+          <div class="container">
+            <h3>Мои планы:</h3>
+            <ul class="s-my-plans__countries">
+              <li>
+                <h5>1. Франция, Италия</h5>
+                <form class="s-my-plans__form-change">
+                  <fieldset class="s-my-plans__fieldset-companions-count">
+                    <legend class="visually-hidden">Желаемое количество попутчиков</legend>
+                    <input id="companions-count-1" type="text" name="companions-count" value="3 попутчика" readonly="">
+                    <label for="companions-count-1" class="visually-hidden">3 попутчика</label>
+                  </fieldset>
+                  <fieldset class="s-my-plans__fieldset-travel-date">
+                    <legend class="visually-hidden">Планируемая дата поездки</legend>
+                    <input id="travel-start-date-1" type="text" name="travel-start-date" value="26 мар" readonly="">
+                    <label for="travel-start-date-1" class="visually-hidden">26 мар</label>
+                    <span>—</span>
+                    <input id="travel-finish-date-1" type="text" name="travel-finish-date" value="29 мар" readonly="">
+                    <label for="travel-finish-date-1" class="visually-hidden">29 мар</label>
+                  </fieldset>
+                  <button type="button">Изменить</button>
+                </form>
+              </li>
+              <li>
+                <h5>1. Таиланд, Индонезия</h5>
+                <form class="s-my-plans__form-change">
+                  <fieldset class="s-my-plans__fieldset-companions-count">
+                    <legend class="visually-hidden">Желаемое количество попутчиков</legend>
+                    <input id="companions-count-2" type="text" name="companions-count" value="1 попутчик" readonly="">
+                    <label for="companions-count-2" class="visually-hidden">1 попутчик</label>
+                  </fieldset>
+                  <fieldset class="s-my-plans__fieldset-travel-date">
+                    <legend class="visually-hidden">Планируемая дата поездки</legend>
+                    <input id="travel-start-date-2" type="text" name="travel-start-date" value="1 июл" readonly="">
+                    <label for="travel-start-date-2" class="visually-hidden">1 июл</label>
+                    <span>—</span>
+                    <input id="travel-finish-date-2" type="text" name="travel-finish-date" value="15 июл" readonly="">
+                    <label for="travel-finish-date-2" class="visually-hidden">15 июл</label>
+                  </fieldset>
+                  <button type="button">Изменить</button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-add-plan">
+        <div class="s-add-plan-inner">
+          <div class="container">
+            <div class="s-add-plan-inner__caption-wrap">
+              <h3>Добавить план:</h3>
+              <div class="s-add-plan-inner__small-nav-btns">
+                <button type="button" class="s-add-plan-inner__small-nav-btn s-add-plan-inner__small-nav-btn--active"></button>
+                <button type="button" class="s-add-plan-inner__small-nav-btn"></button>
+                <button type="button" class="s-add-plan-inner__small-nav-btn"></button>
+              </div>
+            </div>
+            <form class="s-my-plans__add-plan-form">
+              <ul class="s-my-plans__adding-steps">
+                <li class="s-my-plans__adding-step">
+                  <div class="s-my-plans__adding-step-wrap">
+                    <div>
+                      <h5><span>Шаг 1.</span> Даты прибывания</h5>
+                      <p>Укажите предпочтительное количество попутчиков, которых 
+                        вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                    </div>
+                    <ul class="s-my-plans__steps-nav">
+                      <li class="s-my-plans__steps-nav-item s-my-plans__steps-nav-item--active">
+                        <a href="#">Даты</a>
+                        <span></span>
+                      </li>
+                      <li class="s-my-plans__steps-nav-item">
+                        <a href="#">Маршрут</a>
+                        <span></span>
+                      </li>
+                      <li class="s-my-plans__steps-nav-item">
+                        <a href="#">Развлечения</a>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="s-my-plans__flex-wrapper">
+                    <div>
+                      <label for="search-companions">Ищу попутчиков: <span class="s-my-plans__title-span">чел.</span></label>
+                      <div class="s-my-plans__search-companions">
+                        <button type="button" class="s-my-plans__btn-minus">
+                          <svg id="search-companions-btn-minus" width="14" height="2" viewBox="0 0 14 2">
+                            <rect class="st0" width="14" height="2"></rect>
+                          </svg>
+                        </button>
+                        <input id="search-companions" type="text" name="companions-count" value="2">
+                        <button type="button" class="s-my-plans__btn-plus">
+                          <svg id="search-companions-btn-plus" width="14" height="14" viewBox="0 0 14 14">
+                            <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "></polygon>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div>
+                      <label for="trip-duration">Длительность: <span class="s-my-plans__title-span">дн.</span></label>
+                      <div class="s-my-plans__trip-duration">
+                        <input class="visually-hidden" type="text">
+                        <button type="button" class="s-my-plans__btn-minus">
+                          <svg id="trip-duration-btn-minus" width="14" height="2" viewBox="0 0 14 2">
+                            <rect class="st0" width="14" height="2"></rect>
+                          </svg>
+                        </button>
+                        <input id="trip-duration" type="text" name="trip-duration" value="2">
+                        <button type="button" class="s-my-plans__btn-plus">
+                          <svg id="trip-duration-btn-plus" width="14" height="14" viewBox="0 0 14 14">
+                            <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "></polygon>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="s-my-plans__approve-kids">
+                      <input id="notation" class="s-my-plans__adding-steps-notation visually-hidden" name="notation" type="checkbox" checked="" readonly="">
+                      <label class="s-my-plans__approve-kids-label" for="notation">Можно с детьми</label>
+                    </div>
+                  </div>
+                  <div class="s-my-plans__calendar">
+                    <ul class="s-my-plans__calendar-months">
+                      <li class="s-my-plans__calendar-month s-my-plans__calendar-month--selected">Март <span>2019</span></li>
+                      <li class="s-my-plans__calendar-month">Апрель <span>2019</span></li>
+                      <li class="s-my-plans__calendar-month">Май <span>2019</span></li>
+                      <li><button type="button" class="s-my-plans__calendar-month-prev">
+                        <svg id="calendar-month-prev" width="18" height="34" viewBox="0 0 18 34">
+                          <path d="M3.6 17l14-14.4c.6-.6.6-1.6 0-2.1-.6-.6-1.5-.6-2.1 0L.4 15.9c-.6.6-.6 1.6 0 2.1l15.1 15.5c.3.3.7.4 1 .4s.8-.1 1-.4c.6-.6.6-1.6 0-2.1L3.6 17z"></path>
+                        </svg>
+                      </button></li>
+                      <li><button type="button" class="s-my-plans__calendar-month-next">
+                        <svg id="calendar-month-next" width="18" height="34" viewBox="0 0 18 34">
+                          <path d="M14.4 17L.4 2.6C-.1 2-.1 1 .4.4 1-.2 1.9-.2 2.5.4l15.1 15.5c.6.6.6 1.6 0 2.1L2.5 33.6c-.3.3-.7.4-1 .4s-.8-.1-1-.4c-.6-.6-.6-1.6 0-2.1L14.4 17z"></path>
+                        </svg>
+                      </button></li>
+                    </ul>
+                    <ul class="s-my-plans__calendar-week-days">
+                      <li class="s-my-plans__calendar-week-day">п</li>
+                      <li class="s-my-plans__calendar-week-day">в</li>
+                      <li class="s-my-plans__calendar-week-day">с</li>
+                      <li class="s-my-plans__calendar-week-day">ч</li>
+                      <li class="s-my-plans__calendar-week-day">п</li>
+                      <li class="s-my-plans__calendar-week-day s-my-plans__calendar-week-day--weekend">с</li>
+                      <li class="s-my-plans__calendar-week-day s-my-plans__calendar-week-day--weekend">в</li>
+                    </ul>
+                    <ul class="s-my-plans__calendar-month-days">
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>23</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>24</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>25</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>26</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>27</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>28</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>1</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>2</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>3</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>4</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>5</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>6</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>7</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>8</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>9</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>10</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>11</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>12</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>13</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>14</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>15</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>16</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>17</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>18</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>19</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>20</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>21</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>22</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>23</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>24</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>25</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day s-my-plans__calendar-day--companion-exist s-my-plans__calendar-day--active s-my-plans__calendar-day--first-active">
+                        <input class="visually-hidden" type="checkbox" checked="">
+                        <label>26 <span>Заезд</span></label>
+                      </li>
+                      <li class="s-my-plans__calendar-day s-my-plans__calendar-day--companion-exist s-my-plans__calendar-day--active">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>27</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day s-my-plans__calendar-day--companion-exist s-my-plans__calendar-day--active s-my-plans__calendar-day--last-active">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>28 <span>Выезд</span></label>
+                      </li>
+                      <li class="s-my-plans__calendar-day s-my-plans__calendar-day--companion-exist">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>29</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day s-my-plans__calendar-day--companion-exist">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>30</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day s-my-plans__calendar-day--companion-exist">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>31</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day s-my-plans__calendar-day--companion-exist s-my-plans__calendar-day--first-month-day">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>1 <span>апр</span></label>
+                      </li>
+                      <li class="s-my-plans__calendar-day s-my-plans__calendar-day--companion-exist">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>2</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day s-my-plans__calendar-day--companion-exist">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>3</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day s-my-plans__calendar-day--companion-exist">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>4</label>
+                      </li>
+                      <li class="s-my-plans__calendar-day s-my-plans__calendar-day--companion-exist">
+                        <input class="visually-hidden" type="checkbox">
+                        <label>5</label>
+                      </li>
+                    </ul>
+                  </div>
+                 <div class="s-my-plans__toggle-steps">
+                    <button type="button" class="btn btn--add-plane-step-next">Следующий шаг</button>
+                  </div>
+                </li>
+                <li class="s-my-plans__adding-step">
+                  <div class="s-my-plans__adding-step-wrap">
+                    <div>
+                      <h5><span>Шаг 2.</span> Маршрут</h5>
+                      <p>Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+                    </div>
+                    <ul class="s-my-plans__steps-nav">
+                      <li class="s-my-plans__steps-nav-item">
+                        <a href="#">Даты</a>
+                        <span></span>
+                      </li>
+                      <li class="s-my-plans__steps-nav-item s-my-plans__steps-nav-item--active">
+                        <a href="#">Маршрут</a>
+                        <span></span>
+                      </li>
+                      <li class="s-my-plans__steps-nav-item">
+                        <a href="#">Развлечения</a>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="s-my-plans__country-selection">
+                    <li>
+                      <div class="s-my-plans__country-select-wrap">
+                        <label for="input-contry-1" class="visually-hidden">Выбраная страна Босния и Герцеговина</label>
+                        <input id="input-contry-1" type="text" name="selected-contry" value="Босния и Герцеговина" readonly="">
+                        <button type="button" class="s-my-plans__toggle-view-all-country"></button>
+                      </div>
+                      <div class="s-my-plans__country-flag">
+                        <img src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг страны Босния и Герцеговина">
+                        <button type="button" class="s-my-plans__country-delete"></button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="s-my-plans__country-select-wrap">
+                        <label for="input-contry-2" class="visually-hidden">Выбраная страна Чехия</label>
+                        <input id="input-contry-2" type="text" name="selected-contry" value="Чехия" readonly="">
+                        <button type="button" class="s-my-plans__toggle-view-all-country"></button>
+                      </div>
+                      <div class="s-my-plans__country-flag">
+                        <img src="img/flag-czech.svg" width="35" height="24" alt="Флаг страны Чехия">
+                        <button type="button" class="s-my-plans__country-delete"></button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="s-my-plans__country-select-wrap s-my-plans__country-select-wrap--selection">
+                        <button type="button" class="s-my-plans__select-country">Выберите страну</button>
+                        <button type="button" class="s-my-plans__toggle-view-all-country"></button>
+                        <div class="s-my-plans__dropdown-countries">
+                          <!-- s-my-plans__dropdown-countries--open -->
+                          <button type="button">Выберите страну
+                            <span tabindex="0"></span>
+                          </button>
+                          <div>
+                            <ul class="s-my-plans__dropdown-countries-letter">
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter" checked="">
+                                <label class="">а</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>б</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>в</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>г</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>д</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>е</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>з</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>и</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>к</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>л</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>м</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>н</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>о</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>п</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>р</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>с</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>т</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>у</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>ф</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>х</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>ч</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>ш</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>э</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>ю</label>
+                              </li>
+                              <li>
+                                <input class="visually-hidden" type="radio" name="country-letter">
+                                <label>я</label>
+                              </li>
+                            </ul>
+                            <ul class="s-my-plans__dropdown-country-name">
+                              <li>
+                                <input type="radio" name="country-name">
+                                <label>Афганистан</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="country-name">
+                                <label>Албания</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="country-name">
+                                <label>Алжир</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="country-name">
+                                <label>Андорра</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="country-name">
+                                <label>Аргентина</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="country-name">
+                                <label>Армения</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="country-name">
+                                <label>Австралия</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="country-name">
+                                <label>Австрия</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="country-name">
+                                <label>Азербайджан</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="s-my-plans__country-select-wrap s-my-plans__country-select-wrap--adding">
+                        <button type="button" class="s-my-plans__add-country">Добавить страну</button>
+                        <button type="button" class="s-my-plans__toggle-view-all-country"></button>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="s-my-plans__toggle-steps">
+                    <button type="button" class="btn btn--add-plane-step-next">Следующий шаг</button>
+                    <button type="button" class="btn btn--add-plane-step-prev">На шаг назад</button>
+                  </div>
+                </li>
+                <li class="s-my-plans__adding-step">
+                  <div class="s-my-plans__adding-step-wrap">
+                    <div>
+                      <h5><span>Шаг 2.</span> Развлечения</h5>
+                      <p>Наконец, расскажите о своих планах времяпровождения.
+                        Можно писать в свободной форме и ставить тэги.</p>
+                    </div>
+                    <ul class="s-my-plans__steps-nav">
+                      <li class="s-my-plans__steps-nav-item">
+                        <a href="#">Даты</a>
+                        <span></span>
+                      </li>
+                      <li class="s-my-plans__steps-nav-item">
+                        <a href="#">Маршрут</a>
+                        <span></span>
+                      </li>
+                      <li class="s-my-plans__steps-nav-item s-my-plans__steps-nav-item--active">
+                        <a href="#">Развлечения</a>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="s-my-plans__entertainmet">
+                    <li class="s-my-plans__entertainmet-item">
+                      <label>
+                        <span class="s-my-plans__entertainmet-title">Босния и герцеговина
+                          <span><img src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг страны Босния и герцеговина"></span>
+                        </span>
+                        <textarea name="entertainmet_1" placeholder="План действий" required=""></textarea>
+                        <span class="error-required-field">Это поле должно быть заполнено</span>
+                      </label>
+                    </li>
+                    <li class="s-my-plans__entertainmet-item">
+                      <label>
+                        <span class="s-my-plans__entertainmet-title">Чехия
+                          <span><img src="img/flag-czech.svg" width="35" height="24" alt="Флаг страны Чехия"></span>
+                        </span>
+                        <textarea name="entertainmet_2" placeholder="План действий" required="">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                        <span class="error-required-field">Это поле должно быть заполнено</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="s-my-plans__toggle-steps">
+                    <button class="btn btn--add-plane-send" type="submit">Отправить</button>
+                    <button type="button" class="btn btn--add-plane-step-prev">На шаг назад</button>
+                  </div>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer main-footer-inner-page main-footer-inner-page__form-page">
+      <div class="container main-footer__bg-wrap">
+        <a href="index.html" class="main-footer__logo">
+          <picture>
+            <source srcset="img/logo-desktop-blue@1x.png" media="(min-width: 1440px)">
+            <source srcset="img/logo-tablet-blue@1x.png" media="(min-width: 768px)">
+            <img class="logo img-responsive img-width" src="img/logo-mobile-blue@1x.png" alt="Логотип сервиса Погнали">
+          </picture>
+        </a>
+        <ul class="main-footer__social-icons">
+          <li class="main-footer__social-icon">
+            <a href="facebook.com">
+              <span class="visually-hidden">Facebook</span>
+              <svg class="main-footer__social-icon--facebook" width="11" height="21" viewBox="0 0 11 21">
+                <g>
+                <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
+                V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
+                C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="main-footer__social-icon">
+            <a href="vkontakte.ru">
+              <span class="visually-hidden">Vkontakte</span>
+              <svg class="main-footer__social-icon--vkontakte" width="23" height="12" viewBox="0 0 30 15.8">
+                <g>
+                <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
+                c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
+                c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
+                c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
+                C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
+                c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
+                c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
+                c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
+                c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
+                c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
+                c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
+                c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
+                c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
+                c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
+                C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
+                C18.4,10.9,18.5,10.9,18.6,10.9z"></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="main-footer__social-icon">
+            <a href="instagram.com">
+              <span class="visually-hidden">Instagram</span>
+              <svg class="main-footer__social-icon--instagram" width="18" height="18" viewBox="0 0 23 23">
+                <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
+                M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"></path>
+                <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
+                c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"></path>
+                <circle cx="17.6" cy="5.4" r="1.3"></circle>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer__copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="main-footer__copyright-text">Разработано</p>
+            <img width="27" height="34" class="main-footer__copyright-img" src="./img/htmlacademy.svg" alt="Логотип htmlacademy">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.min.js"></script>
+  </body>
+
+</html>
