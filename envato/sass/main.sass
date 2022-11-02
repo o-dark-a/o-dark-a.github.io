@@ -1,0 +1,476 @@
+@import "libs"
+@import "vars"
+@import "fonts"
+@import "default"
+
+body
+  background-color: $bg-color
+  color: $text
+  font-family: $default-font
+  .head
+    position: relative
+    padding-bottom: 200px
+    z-index: 0
+    &-bg-images
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: $overlay-head
+      transform-origin: left bottom
+      transform: rotate(-3deg) scale(1.1)
+      z-index: -1
+      &-wrapimg
+        position: absolute
+        width: 550px
+        height: 150px
+        left: 12%
+        bottom: 0
+        background-color: transparent
+        z-index: 0
+        overflow: hidden
+        img
+          position: absolute
+          width: 25%
+          height: 100%
+          bottom: -30px
+          &:nth-child(1)
+            z-index: 5
+            left: 0
+          &:nth-child(2)
+            z-index: 4
+            left: 15%
+          &:nth-child(3)
+            z-index: 3
+            left: 35%
+          &:nth-child(4)
+            z-index: 2
+            left: 55%
+          &:nth-child(5)
+            z-index: 1
+            left: 75%
+    &__top-line
+      padding: 40px 0
+      justify-content: space-between
+    &__navbar
+      background-color: transparent !important
+      font-size: 15px
+      font-weight: 300
+      text-transform: uppercase
+      a
+        color: #fff !important
+        &:hover
+          opacity: 0.75
+      .navbar-brand
+        &__img
+          width: 230px
+          height: 62px
+          max-width: 230px
+          max-height: 62px
+    &__timer
+      width: 70%
+      margin: 0 auto
+      padding: 30px
+      color: #fff
+      margin-bottom: 160px
+      margin-top: 120px
+      border: 2px solid $accent-color
+      border-radius: 20px
+      p
+        position: relative
+        font-size: 130px
+        font-weight: 300
+        margin: 0 15px
+        line-height: 1
+        &:before
+          content: ':'
+          position: absolute
+          top: 0
+          right: -30px
+        &:last-child()
+          &:before
+            display: none
+        span
+          display: block
+          text-align: center
+          font-size: 25px
+          text-transform: uppercase
+  main
+    .s-welcome
+      position: relative
+      padding-top: 75px
+      &-wrap
+        &__text
+          width: 60%
+          padding-left: 75px
+          padding-right: 50px
+          h2
+        &__desc
+          p
+            font-weight: 300
+        &__form
+          position: absolute
+          width: 430px
+          top: -250px
+          padding: 30px
+          padding-bottom: 10px
+          border: 1px solid #dbdada
+          border-bottom: 2px solid #949293
+          background-color: #fff
+          z-index: 999
+          h3
+            font-size: 30px
+          button
+            width: 100%
+            border-radius: 5px
+            margin-top: 33px
+            margin-bottom: 17px
+          p
+            font-size: 15px
+            font-weight: 300
+            span
+              display: block
+    .s-services
+      padding: 0
+      .service-item
+        text-align: center
+        margin-bottom: 50px
+        img
+          width: 190px
+          height: 190px
+          margin: 0 auto
+        h3
+          font-size: 35px
+          font-weight: 900
+          margin-top: 35px
+          margin-bottom: 10px
+        p
+          font-weight: 300
+          line-height: 1.25
+    .s-developments
+      color: #fff
+      padding-top: 75px
+      p
+        font-weight: 300
+        color: $text
+        padding: 0 70px
+        margin: 0
+        margin: 40px
+        text-align: center
+      .rows-wrap
+        padding: 0 50px
+        &__item
+          display: flex
+          justify-content: space-between
+          flex-wrap: wrap
+          padding: 30px 45px
+          &:first-child()
+            border-top-left-radius: 15px
+            border-top-right-radius: 15px
+          &:last-child()
+            border-bottom-left-radius: 15px
+            border-bottom-right-radius: 15px
+          &:nth-child(even)
+            background-color: $color-butt
+          &:nth-child(odd)
+            background-color: $overlay
+          h3
+            font-weight: 400
+        &__item-caption
+          background-color: $accent-color !important
+          a
+            display: none
+          h2
+            margin: 0
+            font-weight: 900
+            font-size: 30px
+            &:first-child()
+              margin-left: 10px
+        &__column-time
+        &__column-stuff
+          width: 60%
+          display: flex
+          justify-content: flex-start
+        &__column-add
+          i
+            font-size: 35px
+            cursor: pointer
+    .s-reward
+      position: relative
+      .reward-wrap
+        justify-content: space-between
+        &:before
+          content: ''
+          position: absolute
+          top: 50px
+          left: 0
+          width: 100%
+          height: 80%
+          background-color: $overlay
+          transform: rotate(-3deg) scale(1.2)
+          z-index: -1
+        .envatu-elite
+          position: absolute
+          top: -15%
+          width: 355px
+          height: 355px
+        .reward-text
+          margin-left: auto
+          flex-basis: 65%
+          text-align: right
+          color: #fff
+          h2
+            font-weight: 900
+          .desc
+            p
+              font-weight: 300
+          .reward-butt
+    .s-speakers
+      h2
+        font-weight: 900
+        margin-bottom: 25px
+      p
+        width: 55%
+        font-weight: 300
+        margin-bottom: 60px
+      .row
+        > div
+          &:nth-child(5)
+            display: flex
+            justify-content: center
+            align-items: center
+            .items-wrapper
+              width: 100%
+              padding: 35px
+              margin-bottom: 50px
+              display: flex
+              justify-content: center
+              align-items: center
+      .green-block
+        position: relative
+        background: #46c70b url('../img/speakers-item-bg.jpg') no-repeat center / cover
+        color: #ffffff
+        border-radius: 15px
+        padding: 35px
+        margin-bottom: 30px
+        overflow: hidden
+        &:before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background-color: $accent-color
+          z-index: 10
+          transition: all .2s ease
+        &:hover
+          &:before
+            opacity: 0
+            cursor: pointer
+            transition: all .2s ease
+            z-index: -1
+        .item
+          &-title
+            position: relative
+            font-size: 45px
+            font-weight: 900
+            line-height: 1
+            margin-bottom: 25px
+            &:before
+              content: ''
+              position: absolute
+              left: 0
+              bottom: -12px
+              width: 30%
+              height: 6px
+              background-color: #fff
+          &-text
+            font-size: 18px
+            line-height: 1.2
+            margin-bottom: 55px
+            width: 75%
+          &-social
+            .list-social
+              display: flex
+              li
+                width: 35px
+                height: 35px
+                margin-right: 10px
+                a
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  width: 100%
+                  height: 100%
+                  background-color: #fff
+                  border-radius: 50%
+                  color: #46c70b
+                  font-size: 22px
+                  text-decoration: none
+                  border: 1px solid #fff
+                  &:hover
+                    color: #ffffff
+                    background-color: transparent
+    .s-sponsor
+      position: relative
+      color: #fff
+      text-align: center
+      h2
+        font-weight: 900
+        margin: 0
+      p
+        padding: 0 20%
+        font-weight: 300
+        margin: 30px 0
+        span
+          display: block
+          margin: 25px 0 45px 0
+      .sponsors-logo
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 75px
+        padding: 0 20%
+      &:before
+        content: ''
+        position: absolute
+        top: 70px
+        left: 0
+        width: 100%
+        height: 75%
+        background-color: $overlay
+        transform: rotate(-3deg) scale(1.2)
+        z-index: -1
+    .s-past-events
+      padding: 100px 0
+      h2
+        font-weight: 900
+        margin-bottom: 25px
+      p
+        width: 55%
+        font-weight: 300
+        margin-bottom: 100px
+      .events-block
+        display: flex
+        flex-wrap: wrap
+        &__item
+          position: relative
+          flex-basis: 50%
+          overflow: hidden
+          &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+            &:before
+              content: ''
+              position: absolute
+              top: 0
+              left: 0
+              width: 100%
+              height: 100%
+              opacity: 0.8
+              transition: all .5s
+          &:nth-child(1)
+            height: 415px
+            background: url(../img/event-1.jpg) no-repeat center / cover
+            &:before
+              background-color: #3d6ed2
+          &:nth-child(2)
+            height: 415px
+            background: url(../img/event-2.jpg) no-repeat center / cover
+            &:before
+              background-color: $accent-color
+          &:nth-child(3)
+            height: 365px
+            flex-basis: 40%
+            background: url(../img/event-3.jpg) no-repeat center / cover
+            &:before
+              background-color: #ff9d00
+          &:nth-child(4)
+            height: 365px
+            flex-basis: 60%
+            background: url(../img/event-4.jpg) no-repeat center / cover
+            &:before
+              background-color: #e0652a
+          &:hover
+            cursor: pointer
+            &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+              &:before
+                transform: translateX(-100%)
+                transition: all .5s
+      .butt-events
+        display: block
+        margin: 0 auto
+        margin-top: 75px
+    .contacts-us
+      padding: 70px 0
+      background: url('../img/map.jpg') no-repeat center / cover
+      .contacts-card
+        display: flex
+        justify-content: space-between
+        background-color: #fff
+        padding: 50px 70px
+        &__address
+          flex-basis: 40%
+          text-align: center
+          img
+            margin: 0 auto
+            margin-top: 35px
+            margin-bottom: 45px
+            width: 130px
+          p
+            font-weight: 300
+            font-size: 18px
+            padding: 0 60px
+            margin-bottom: 30px
+            line-height: 1.3
+        &__form
+          flex-basis: 50%
+          textarea
+            margin: 28px 0
+            resize: none
+        &__butt
+          border-radius: 5px
+          width: 100%
+  .footer
+    background-color: $accent-color
+    text-align: center
+    color: #fff
+    padding-top: 60px
+    padding-bottom: 40px
+    .social-links
+      display: flex
+      justify-content: center
+      li
+        width: 46px
+        height: 46px
+        margin: 0 8px
+        a
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 100%
+          height: 100%
+          background-color: #fff
+          color: $accent-color
+          border: 1px solid #fff
+          border-radius: 50%
+          i
+            font-size: 28px
+          &:hover
+            background-color: transparent
+            color: #fff
+
+    p
+      font-weight: 300
+      font-size: 18px
+      margin-top: 35px
+      span
+        display: block
+
+.navbar-light
+  .navbar-toggler
+    border-color: rgba(255, 255, 255, 0.5)
+    &:focus, &active
+      outline: none
+  .navbar-toggler-icon
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+
+@import "media"

@@ -1,0 +1,120 @@
+::placeholder
+  color: #bebebe
+  font-size: 19px
+
+::selection
+  background-color: darken($a-color, 20%)
+  color: #fff
+
+body
+  position: relative
+  min-width: 320px
+  background-color: $bg-color
+  color: $text
+  font-family: $default-font
+  font-size: $base-size
+  line-height: 1.5
+  overflow-x: hidden
+  section
+    padding: 125px 0
+  
+h1, h2, h3, h4
+  font-weight: bold
+
+h1
+  font-size: 60px
+h2
+  font-size: 50px
+h3 
+  font-size: 22px
+h4
+  font-size: 20px
+
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+a
+  color: $a-color
+  transition: all .25s ease
+  &:hover
+    color: $accent-color
+    transition: all .25s ease
+  &:focus, &:active, &:visited
+    border: none
+    outline: none
+
+i
+  font-family: 'Font Awesome 5 Free'
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.butt, .butt-accent
+  padding: 12px 50px
+  background-color: $color-butt
+  border-radius: 15px
+  text-align: center
+  font-size: 22px
+  color: #fff
+  border: none
+  box-shadow: none
+  transition: all .2s ease
+  &:focus
+    box-shadow: none
+  &:hover
+    transition: all .2s ease
+
+.butt-accent
+  background-color: $accent-color
+  &:hover
+
+form
+  input, textarea
+    width: 100%
+    height: 53px
+    margin: 10px 0
+    border: 1px solid #bebebe
+    color: #6c6c6c
+    border-radius: 5px
+    padding: 15px
+    font-size: 19px
+    &:focus
+      border-color: $accent-color
+  textarea
+    height: 250px
+.to-top
+  display: none
+  i
+    display: none
+.to-top.show
+  display: flex
+  justify-content: center
+  align-items: center
+  position: fixed
+  right: 15px
+  bottom: 15px
+  width: 50px
+  height: 50px
+  background-color: transparent
+  color: $text
+  z-index: 99999
+  &:hover
+    cursor: pointer
+  i
+    display: inline-block
+    font-size: 36px
+  
+.tac
+  text-align: center
+.df
+  display: flex
+.jcc
+  justify-content: center
+.aic
+  align-items: center
+.fdc
+  flex-direction: column

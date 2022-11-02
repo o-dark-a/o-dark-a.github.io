@@ -1,0 +1,207 @@
+@import "vars"
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  body
+    .head-bg-images-wrapimg
+      left: 8%
+    .head__timer
+      width: 80%
+      margin: 90px auto 140px
+      p
+        font-size: 100px
+    .s-welcome
+      position: relative
+      padding-top: 75px
+      &-wrap
+        &__sign
+          margin-right: 80px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  body
+    .head
+      padding-bottom: 150px
+      &__top-line
+      &__navbar
+        ul
+          margin-top: 30px
+      .head__timer
+        width: 100%
+    main
+      .s-welcome
+        &-wrap
+          flex-direction: column
+          &__text
+            width: 100%
+            padding: 0
+          &__sign
+            width: 100%
+            margin: 0
+            margin-top: 35px
+          &__form
+            position: static !important
+            width: 100%
+            margin: 0 auto
+      .s-services
+        .row
+          display: flex
+          justify-content: center
+      .s-developments
+        .rows-wrap, p
+          padding: 0
+      .s-reward .reward-wrap
+        .envatu-elite
+          width: 250px
+          height: 250px
+          top: -10%
+        .reward-text
+          flex-basis: 70%
+          h2
+            font-size: 45px
+          .desc
+            p
+              font-size: 10px
+      .s-speakers
+        h2
+        p
+          width: 100%
+        .row
+          > div
+            &:nth-child(5)
+              display: none
+        .green-block
+          &:before
+            opacity: 0
+      .s-sponsor
+        p
+          padding: 0
+        .sponsors-logo
+          padding: 0
+      .s-past-events
+        p
+          width: 100%
+          margin-bottom: 65px
+        .events-block
+          &__item
+            flex-basis: 100% !important
+      .contacts-us .contacts-card
+        flex-direction: column
+        &__address
+          margin-bottom: 50px
+          p
+            padding: 0
+        &__form
+          flex-basis: 100%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  body 
+    section
+      padding: 75px 0
+    .head
+      padding-bottom: 75px
+      &-bg-images-wrapimg
+        width: 400px
+        height: 110px
+      &__timer
+        margin-top: 25px
+        margin-bottom: 125px
+        p
+          font-size: 60px
+          span
+            font-size: 18px
+          &:before
+            right: -20px
+    main
+      .s-developments
+        display: none
+      .s-reward .reward-wrap
+        &:before
+          transform: rotate(-4deg) scale(1.3)
+        .envatu-elite
+          width: 150px
+          height: 150px
+        .reward-text
+          margin-top: 30px
+          flex-basis: 100%
+          h2
+            font-size: 38px
+      .s-sponsor
+        .sponsors-logo
+          flex-direction: column
+          &__img
+            margin-bottom: 50px
+            &:last-child()
+              margin-bottom: 0
+        &:before
+          top: 60px
+          height: 85%
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  body
+    .head
+      padding-bottom: 50px
+      &__top-line
+      &__navbar
+        .navbar-brand
+          &__img
+            width: 175px
+            height: 50px
+      &-bg-images
+        transform: rotate(-5deg) scale(1.2)
+        &-wrapimg
+          display: none
+      &__timer
+        display: none
+    main
+      .s-services
+        .row
+          > div
+            &:last-child()
+              margin-bottom: 75px
+        .service-item
+          img
+            width: 130px
+            height: 130px
+          h3
+            font-size: 28px
+            margin-top: 25px
+            margin-bottom: 5px
+          p
+            font-size: 12px
+      .s-reward .reward-wrap
+        .reward-text h2
+          font-size: 35px
+      .contacts-us .contacts-card
+        padding: 25px
+      section
+        h2
+          font-size: 35px
+        p
+          font-size: 12px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+  body
+    .head
+    main
+      .s-reward .reward-wrap
+        &:before
+          transform: rotate(-4deg) scale(1.45)
+          height: 70%
+        .reward-text
+          margin-top: 0
+          h2
+            font-size: 30px
+        .envatu-elite
+          top: -16%
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1400px)
+  body .head-bg-images-wrapimg
+    left: 25%
