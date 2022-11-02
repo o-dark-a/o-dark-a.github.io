@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>LEMON layout</title>
+</head>
+<body>
+
+  <header>
+    <img src="img/Logo.png" alt="logo" class="head-logo">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-menu">
+        <a class="navbar-brand" href="#">
+          <img src="img/Logo.png" alt="logo" class="head-logo-mini">
+        </a>
+
+        <form class="form-inline my-2 my-lg-0 form-search">
+            <i class="fas fa-search"></i>
+          <input class="form-control mr-sm-2 butt" type="search" placeholder="Find a recipe" aria-label="Search">
+        </form>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recipes
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">RECOMMENDED</a>
+                <a class="dropdown-item" href="#">POPULAR</a>
+                <a class="dropdown-item" href="#">QUICK & EASY</a>
+                <a class="dropdown-item" href="#">HEALTHY</a>
+                <a class="dropdown-item" href="#">NEWEST</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Photo Galleries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">All Categor</a>
+            </li>
+          </ul>
+        </div>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="s-main-slider">
+      <div class="container">
+        <div id="main-carousel" class="carousel slide carousel-fade main-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#main-carousel" data-slide-to="1"></li>
+            <li data-target="#main-carousel" data-slide-to="2"></li>
+            <li data-target="#main-carousel" data-slide-to="3"></li>
+            <li data-target="#main-carousel" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/slide-1.jpg" class="d-block w-100" alt="foto-1">
+              <div class="carousel-caption caption-slide d-none d-md-block">
+                <img src="img/Logo.png" alt="logo" class="head-logo-mini logo-on-slide">
+                <h4>Bananas Foster Ice Cream Cake</h4>
+                <p>If you're looking for decadence, look no further — you've found the Holy Grail of desserts. Honestly,
+                  this cake makes us wonder why Bananas Foster hasn't always been served on top of ice cream cake.</p>
+                <button class="butt">Get it recipe</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide-1.jpg" class="d-block w-100" alt="foto-2">
+              <div class="carousel-caption caption-slide caption-slide-2 d-none d-md-block">
+                <img src="img/Logo.png" alt="logo" class="head-logo-mini logo-on-slide">
+                <h4>Bananas Foster Ice Cream Cake</h4>
+                <p>If you're looking for decadence, look no further — you've found the Holy Grail of desserts. Honestly,
+                  this cake makes us wonder why Bananas Foster hasn't always been served on top of ice cream cake.</p>
+                <button class="butt">Get it recipe</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide-1.jpg" class="d-block w-100" alt="foto-2">
+              <div class="carousel-caption caption-slide caption-slide-2 d-none d-md-block">
+                <img src="img/Logo.png" alt="logo" class="head-logo-mini logo-on-slide">
+                <h4>Bananas Foster Ice Cream Cake</h4>
+                <p>If you're looking for decadence, look no further — you've found the Holy Grail of desserts. Honestly,
+                  this cake makes us wonder why Bananas Foster hasn't always been served on top of ice cream cake.</p>
+                <button class="butt">Get it recipe</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide-1.jpg" class="d-block w-100" alt="foto-2">
+              <div class="carousel-caption caption-slide caption-slide-2 d-none d-md-block">
+                <img src="img/Logo.png" alt="logo" class="head-logo-mini logo-on-slide">
+                <h4>Bananas Foster Ice Cream Cake</h4>
+                <p>If you're looking for decadence, look no further — you've found the Holy Grail of desserts. Honestly,
+                  this cake makes us wonder why Bananas Foster hasn't always been served on top of ice cream cake.</p>
+                <button class="butt">Get it recipe</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide-1.jpg" class="d-block w-100" alt="foto-2">
+              <div class="carousel-caption caption-slide caption-slide-2 d-none d-md-block">
+                <img src="img/Logo.png" alt="logo" class="head-logo-mini logo-on-slide">
+                <h4>Bananas Foster Ice Cream Cake</h4>
+                <p>If you're looking for decadence, look no further — you've found the Holy Grail of desserts. Honestly,
+                  this cake makes us wonder why Bananas Foster hasn't always been served on top of ice cream cake.</p>
+                <button class="butt">Get it recipe</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="butt on-sm-device">Get it recipe</button>
+
+      </div>
+    </section>
+
+    <section class="s-recipes">
+      <div class="container">
+
+        <div class="wrap-recipes">
+          <div class="recipe-item">
+            <img src="img/Photo-3.jpg" alt="" class="recipe-item-img">
+            <div class="recipe-item-desc">
+              <h4 class="title">Raspberry & Cream Frozen Yogurt Pie</h4>
+              <ul>
+                <li class="cooking-time">
+                  <i class="far fa-clock"></i>
+                  <span>35mins | </span>
+                </li>
+                <li class="num-comments">
+                  <i class="far fa-comment"></i>
+                  <span>7</span>
+                </li>
+                <li class="num-views">
+                  <i class="far fa-eye"></i>
+                  <span>14</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="recipe-item">
+            <img src="img/Photo-2.jpg" alt="" class="recipe-item-img">
+            <div class="recipe-item-desc">
+              <h4 class="title">Giant Ice Cream Sandwich</h4>
+              <ul>
+                <li class="cooking-time">
+                  <i class="far fa-clock"></i>
+                  <span>35mins | </span>
+                </li>
+                <li class="num-comments">
+                  <i class="far fa-comment"></i>
+                  <span>4</span>
+                </li>
+                <li class="num-views">
+                  <i class="far fa-eye"></i>
+                  <span>356</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="recipe-item">
+            <img src="img/Photo-1.jpg" alt="" class="recipe-item-img">
+            <div class="recipe-item-desc">
+              <h4 class="title">Dark Chocolate Crunch Ice Cream Sandwich Cake</h4>
+              <ul>
+                <li class="cooking-time">
+                  <i class="far fa-clock"></i>
+                  <span>35mins | </span>
+                </li>
+                <li class="num-comments">
+                  <i class="far fa-comment"></i>
+                  <span>4</span>
+                </li>
+                <li class="num-views">
+                  <i class="far fa-eye"></i>
+                  <span>167</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="s-main-recipe">
+      <div class="container">
+
+        <div class="main-recipe">
+          <div class="main-recipe-img">
+            <div class="file-icon">
+              <i class="far fa-file-image"></i>
+            </div>
+          </div>
+          <div class="main-recipe-desc">
+            <h3 class="main-recipe-desc-title">Bananas Foster Ice Cream Cake</h3>
+            <div class="main-recipe-desc-add-date">
+              <ul>
+                <li>
+                  <i class="far fa-clock"></i>
+                  <span>15mins</span>
+                </li>
+                <li>
+                  <i class="fas fa-signal"></i>
+                  <span>Easy</span>
+                </li>
+              </ul>
+    
+              <button class="butt butt-save-recipe">Save recipe</button>
+            </div>
+            <div id="main-recipe-desc-main-text" class="main-recipe-desc-main-text">
+              <span>
+                  1 (8 ounce) container frozen whipped topping, thawed
+                  20 chocolate round wafers, divided
+                  1 (7 1/4 ounce) bottle Smucker's® Hot Dark Chocolate Microwaveable Topping, divided
+              </span>
+              
+              <strong>Directions</strong>
+              
+              ARRANGE 8 to 9 ice cream sandwiches in 9-inch square pan, cutting to form an even layer.
+              Spread with half of whipped topping. Break or crush chocolate wafers and sprinkle over the whipped cream.
+              Microwave 1 cup of chocolate topping into small microwave-safe bowl on HIGH for 30 seconds. Drizzle evenly over wafers.<br>
+              TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped topping.
+              Freeze 3 hours or overnight. Remove from freezer 10 minutes before serving. Cut into squares.
+              HEAT remaining topping. Drizzle each serving with topping. Sprinkle with decorator sprinkles.
+              Nutritional information (amount per servings): Total Calories: 640. Sodium 440mg. Fat: 32g. Carbohydrates: 82g.
+              Cholesterol: 40mg. Protein: 11g. Fiber: 1g.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="s-additional-pages d-none d-sm-block">
+      <div class="container">
+
+        <div class="wrap-not-found-pg">
+          <div class="not-found-pg">
+            <p class="title">404</p>
+            <div class="content">
+              <img src="img/not-found-page.png" alt="Not found page">
+              <div class="text-error">
+                <h3>Sorry</h3>
+                <p>We couldn’t find the page</p>
+                <span>:(</span>
+              </div>
+            </div>
+            <button class="butt">Back</button>
+          </div>
+        </div>
+
+        <div class="wrap-author-post">
+          <div class="author-post">
+              <p class="title">Author</p>
+
+              <div class="content">
+                <div class="author-foto">
+                  <img src="img/author.jpg" alt="author foto">
+                </div>
+                <div class="author-date">
+                  <h3 class="name-author">Karen Gray</h3>
+                  <p class="from">United States</p>
+                  <ul class="social">
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+                  <div class="comment-text">
+                    <h4>About Lemon</h4>
+                    <p>
+                        Over the fifteen-year life span of Food.com, we’ve learned that – in addition to eating
+                        – sharing is what you do best. And thanks to the 20 million of you who come here each month,
+                        we now have 500,000 recipes to show for it, more than anywhere else in the digital universe.
+                        We also have tons crazy-tempting photos, troves of recipe reviews and more than 2 million Facebook
+                        likes. That’s a heck of a lot of Food. Thank you! 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="signature">
+                <img src="img/Signature.jpg" alt="Signature">
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="s-components">
+      <div class="container">
+
+        <div class="component">
+          <div class="component-carousel-recipe d-none d-md-block">
+            <p class="component-carousel-recipe-title">
+              Chi-Chi or Chichi
+            </p>
+            
+            <div class="desc">
+              <img src="img/UberData.jpg" alt="User foto">
+              <div class="text">
+                <p>Recipe by <strong>Smuckersreg Toppings</strong></p>
+                <ul>
+                  <li class="cooking-time">
+                    <i class="far fa-clock"></i>
+                    <span>15mins | </span>
+                  </li>
+                  <li class="num-comments">
+                    <i class="far fa-comment"></i>
+                    <span>12</span>
+                  </li>
+                  <li class="num-views">
+                    <i class="far fa-eye"></i>
+                    <span>37</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="carousel">
+                
+              <div id="component-carousel" class="carousel slide component-carousel" data-ride="carousel">
+                
+                <ol class="carousel-indicators">
+                  <li data-target="#component-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#component-carousel" data-slide-to="1"></li>
+                  <li data-target="#component-carousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/Photo-6.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/Photo-6.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/Photo-6.jpg" alt="Third slide">
+                  </div>
+                </div>
+
+              </div>
+
+          </div>
+
+          </div>
+
+          <div class="component-recipes-levels">
+            <div class="title d-none d-sm-block">
+              <p>Recipe</p>
+              <ul class="on-desctop">
+                <li><a href="#"><i class="fas fa-print"></i></a></li>
+                <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+
+            <div class="component-recipes-levels-tabs">
+              
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Easy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Middle</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Long</a>
+                  </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                    <div class="list-recipes">
+                      <a href="#">
+                        <div class="list-recipes-item">
+                          <img src="img/foto-min-1.jpg" alt="Recipe image">
+                          <p class="desc">
+                            by <strong>Smuckersreg Toppings</strong>
+                            <span>
+                                Thanks for the recipe
+                                lorem ipsum bla bla bla  
+                                Thanks for the recipe lore
+                            </span>
+                          </p>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="list-recipes-item">
+                          <img src="img/foto-min-2.jpg" alt="Recipe image">
+                          <p class="desc">
+                            by <strong>Smuckersreg Toppings</strong>
+                            <span>
+                                Thanks for the recipe
+                                lorem ipsum bla bla bla
+                            </span>
+                          </p>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="list-recipes-item">
+                          <img src="img/foto-min-3.jpg" alt="Recipe image">
+                          <p class="desc">
+                            by <strong>Smuckersreg Toppings</strong>
+                            <span>
+                                Thanks for the recipe
+                                lorem ipsum bla bla bla
+                            </span>
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                      <div class="list-recipes">
+                        <a href="#">
+                          <div class="list-recipes-item">
+                            <img src="img/foto-min-3.jpg" alt="Recipe image">
+                            <p class="desc">
+                              by <strong>Smuckersreg Toppings</strong>
+                              <span>
+                                  Thanks for the recipe
+                                  lorem ipsum bla bla bla  
+                                  Thanks for the recipe lore
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="list-recipes-item">
+                            <img src="img/foto-min-2.jpg" alt="Recipe image">
+                            <p class="desc">
+                              by <strong>Smuckersreg Toppings</strong>
+                              <span>
+                                  Thanks for the recipe
+                                  lorem ipsum bla bla bla
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="list-recipes-item">
+                            <img src="img/foto-min-1.jpg" alt="Recipe image">
+                            <p class="desc">
+                              by <strong>Smuckersreg Toppings</strong>
+                              <span>
+                                  Thanks for the recipe
+                                  lorem ipsum bla bla bla
+                                  Thanks for the recipe
+                                  lorem ipsum bla bla bla
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                  </div>
+
+                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                      <div class="list-recipes">
+                        <a href="#">
+                          <div class="list-recipes-item">
+                            <img src="img/foto-min-2.jpg" alt="Recipe image">
+                            <p class="desc">
+                              by <strong>Smuckersreg Toppings</strong>
+                              <span>
+                                  Thanks for the recipe
+                                  lorem ipsum bla bla bla  
+                                  Thanks for the recipe lore
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="list-recipes-item">
+                            <img src="img/foto-min-1.jpg" alt="Recipe image">
+                            <p class="desc">
+                              by <strong>Smuckersreg Toppings</strong>
+                              <span>
+                                  Thanks for the recipe
+                                  lorem ipsum bla bla bla
+                                  Thanks for the recipe
+                                  lorem ipsum bla bla bla
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="list-recipes-item">
+                            <img src="img/foto-min-3.jpg" alt="Recipe image">
+                            <p class="desc">
+                              by <strong>Smuckersreg Toppings</strong>
+                              <span>
+                                  Thanks for the recipe
+                                  lorem ipsum bla bla bla
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="on-mobile d-block d-sm-none">
+              <ul>
+                <li><a href="#"><i class="fas fa-print"></i></a></li>
+                <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+
+            <button class="butt">View more</button>
+
+          </div>
+  
+          <div class="component-popular-now">
+            <h3>Popular Now</h3>
+            <h4>Vanilla Frozen Coffee</h4>
+            <p>
+              Mix coffee, sugar and creamer.
+              Pour into blender and add ice cubes. 
+              Blend until smooth.
+            </p>
+            <div class="buttons">
+              <botton class="butt butt-popular-now">Get it recipe</botton>
+              <ul>
+                  <li class="cooking-time">
+                    <i class="far fa-clock"></i>
+                    <span>35mins | </span>
+                  </li>
+                  <li class="num-comments">
+                    <i class="far fa-comment"></i>
+                    <span>4</span>
+                  </li>
+                  <li class="num-views">
+                    <i class="far fa-eye"></i>
+                    <span>167</span>
+                  </li>
+                </ul>
+            </div>
+          </div>
+  
+        </div>
+
+      </div>
+    </section>
+
+    <section class="s-post-comments d-none d-md-block">
+      <div class="container">
+
+        <div class="wrapp-comment">
+
+          <div class="past-comment">
+            <div class="titles">
+              <h3>Past a Comment</h3>
+              <p class="quickly-reg"><a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+            </div>
+            <form class="block-form">
+              <img src="img/UberData.jpg" alt="author-comment-foto">
+              <div class="wrap-input">
+                <input type="text" required>
+                <button class="butt butt-post">Post</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="s-view-comments d-none d-md-block">
+      <div class="container">
+
+        <div class="all-comments">
+          <div class="all-comments-comment">
+
+            <h3>Comments</h3>
+            <div class="comment-item">
+
+              <div class="icons">
+                <a href="#"><span>456</span><i class="fas fa-share-alt"></i></a>
+                <a href="#"><span>35</span><i class="far fa-thumbs-up"></i></a>
+              </div> 
+
+              <img src="img/UberData.jpg" alt="author comment">
+              <div class="comment-desc">
+                <p>post by</p>
+                <h4>Smuckersreg Toppings <span>reply</span></h4>
+                <span>6/10/2014</span>
+                <img src="img/Photo-3.jpg" alt="post by image">
+                <p class="text-comment">
+                  Thanks for the recipe
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="all-comments-reply">
+
+            <div class="icons">
+              <a href="#"><span>456</span><i class="fas fa-share-alt"></i></a>
+              <a href="#"><span>35</span><i class="far fa-thumbs-up"></i></a>
+            </div> 
+
+            <div class="all-comments-reply-wrap">
+              <img src="img/UberData.jpg" alt="author comment">
+              <div class="comment-desc-reply">
+                <p>post by</p>
+                <h4>Smuckersreg Toppings <span>reply</span></h4>
+                <span>6/10/2014</span>
+                <p class="text-comment-reply">
+                  Thanks for the recipe lorem ipsum bla bla bla  Thanks for the recipe lor
+                </p>
+              </div>
+            </div>
+            <div class="all-reply">
+              <a href="#">24 more comments</a>
+            </div>
+          </div>
+
+          <div class="hor-line"></div>
+
+          <div class="all-comments-comment">
+
+            <div class="comment-item">
+
+              <div class="icons">
+                <a href="#"><span>456</span><i class="fas fa-share-alt"></i></a>
+                <a href="#"><span>35</span><i class="far fa-thumbs-up"></i></a>
+              </div> 
+
+              <img src="img/UberData.jpg" alt="author comment">
+              <div class="comment-desc no-bd-bott">
+                <p>post by</p>
+                <h4>Smuckersreg Toppings <span>reply</span></h4>
+                <span>6/10/2014</span>
+                <p class="text-comment">
+                  Thanks for the recipe
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hor-line"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="s-pagination d-none d-md-block">
+      <div class="container">
+        
+        <div class="pagination">
+          <div class="pagination-items">
+            <a href="#"><</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="foot-content">
+        <img src="img/footer-logo.png" alt="logo">
+        <nav class="footer-nav">
+          <a href="#">Home</a>
+          <a href="#">Recipes</a>
+          <a href="#">Photo Galleries</a>
+          <a href="#">Videos</a>
+          <a href="#">All Categor</a>
+        </nav>
+        <div class="line d-block d-md-none"></div>
+        <div class="copyright">
+            <i class="far fa-copyright"></i>
+            2016-2017 LEMON. All right reserved
+        </div>
+        <ul class="social">
+          <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/script.min.js"></script>
+</body>
+</html>

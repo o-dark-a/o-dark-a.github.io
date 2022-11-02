@@ -1,0 +1,255 @@
+@import "vars"
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  .navbar-menu
+    padding: 30px 55px
+    .navbar-brand
+      width: 87px
+  main
+    .s-main-slider .main-carousel .carousel-item
+      .caption-slide
+        width: 60%
+        padding-top: 0
+        padding-bottom: 12px
+        .logo-on-slide
+          width: 232px
+        h4
+          font-size: 21px
+          margin-top: 20px
+          margin-bottom: 10px
+        p
+          padding: 7px
+          padding-left: 0
+    .s-main-recipe .main-recipe-desc-main-text
+      height: 62%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  body
+    .head-logo
+      margin: 200px auto 70px
+  .navbar-menu
+    .navbar-toggler
+      order: 0
+    .form-search
+      margin-left: 0
+  main
+    .s-main-slider .main-carousel .carousel-item
+      .caption-slide
+        width: 65%
+        padding-bottom: 8px
+        .logo-on-slide
+          width: 175px
+        h4
+          font-size: 16px
+          margin-top: 15px
+          margin-bottom: 0
+        p
+          font-size: 13px
+          margin-bottom: 5px
+        .butt
+          padding: 5px 15px
+          font-size: 14px
+    .s-main-recipe .main-recipe-desc
+      margin: 25px
+      margin-right: 35px
+      &-main-text
+        height: 60%
+    .s-additional-pages .container
+      flex-direction: column
+      > div
+        width: 100% !important
+        &:first-child
+          margin-bottom: $m-b
+    .s-components .component
+      > div
+        width: 45%
+        margin: 0 2%
+        margin-bottom: 50px
+      .component-popular-now .buttons 
+        .butt-popular-now
+          font-size: 12px
+          padding: 6px 14px
+        ul li
+          font-size: 12px
+    .s-post-comments .wrapp-comment, .s-view-comments .all-comments, .s-pagination .pagination
+      width: 100%
+
+  footer .foot-content
+    img
+      margin: 0
+    .copyright
+      position: absolute
+      bottom: 30px
+      right: 50px
+    .social
+      left: 50px
+      bottom: 30px
+  .navbar-menu
+    .nav-item .dropdown-menu
+      border: none
+      background-color: transparent
+    .dropdown-toggle::after
+      display: inline-block
+
+@media only screen and (max-width: 991.5px)
+  .navbar-menu .form-search
+    order: 0
+    margin-left: 15%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  body
+    background-color: $bg-color-mob
+    .head-logo
+      display: none
+    .navbar-menu
+      padding: 20px 30px
+      margin-bottom: 10px
+      box-shadow: none
+      .navbar-toggler
+      .form-search
+        margin-left: 25%
+        input
+          padding: 10px 20px
+          border: none
+          &:focus
+            background-color: transparent
+        i
+          left: 17px
+    main
+      .s-main-slider
+        margin-bottom: 28px
+        .main-carousel
+          .carousel-item img
+            transform: scale(1.5) translateX(-15%)
+          .carousel-indicators
+            display: none
+        .on-sm-device
+          display: block
+          width: 100%
+          border: none
+          margin-top: 28px
+      .s-recipes
+        .wrap-recipes
+          flex-direction: column
+          padding: 0
+          box-shadow: none
+          .recipe-item
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 100%
+            padding: 0
+            padding-bottom: 35px
+            &-img
+              max-width: 100%
+              width: 100%
+              max-height: 100%
+              height: auto
+            &-desc
+              width: 100%
+      .s-main-recipe .main-recipe
+        &-img
+          width: 40%
+        &-desc
+          width: 60%
+          margin: 20px
+          &-main-text
+            height: 63%
+      .s-components .component > div
+        width: 100%
+        margin: 0
+        margin-bottom: 50px
+    .foot-content
+      align-items: flex-start
+      img
+        width: 20%
+      .footer-nav
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        a
+          margin: 10px 0
+      .copyright
+        width: 25%
+      .social
+        bottom: 240px
+
+/* Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  body
+    .navbar-menu .form-search
+      margin-left: 18%
+
+    main
+      .s-main-slider
+        .container
+          margin: 0
+          padding: 0
+        .main-carousel
+          width: 100%
+          box-shadow: none
+          .carousel-item
+            img
+              transform: scale(1.5)
+      .s-recipes
+        margin-bottom: 20px
+        .container
+          margin: 0
+          padding: 0
+        .wrap-recipes .recipe-item
+          background-color: $bg-color-mob
+          &-desc
+            padding: 0 15px
+      .s-main-recipe
+        display: none
+      .s-components
+        margin-bottom: 0
+        .container
+          padding: 0
+        .component
+          > div
+            padding: 35px !important
+          &-recipes-levels
+            box-shadow: none
+            border-top: 1px solid $gray
+            border-bottom: 1px solid $gray
+            margin: 0 !important
+          &-popular-now
+            box-shadow: none
+            margin: 25px 0 !important
+    footer .container
+      padding: 0
+      .foot-content
+        .copyright
+          text-align: right
+          width: 40%
+        img
+          width: 30%
+        .social
+          bottom: 210px
+          li a i
+            font-size: 16px
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+  body
+    .navbar-menu
+      padding: 25px 0px
+      .navbar-brand
+        margin: 0
+      .form-search
+        margin: 0
+        margin-left: 5%
+        input
+          padding: 10px
+        i
+          left: 5px
+    footer .container .foot-content .social
+      bottom: 230px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  body
+    overflow-x: scroll

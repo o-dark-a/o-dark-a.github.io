@@ -1,0 +1,13 @@
+@mixin font-face($name, $file-path, $local, $weight:normal, $style:normal)
+  @font-face
+    font-family: $name
+    font-weight: $weight
+    font-style:  $style
+    src: local('#{$local}'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.woff2') format('woff2')
+
+@mixin page-title
+  font-family: JosefinSans-Regular, sans-serif
+  font-size: 20px
+  border-bottom: 1px solid $gray
+  padding-left: 7px
+  padding-bottom: 3px
